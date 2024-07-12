@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.output {
+  outline: none;
+  border: none;
+  width: 320px;
+  height: 70px;
+  font-size: 32px;
+  padding: 2px 10px;
+  background-color: #333;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.3s; /* Adding transition for smooth effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.output:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+.digit {
+  width: 85px;
+  height: 90px;
+  font-size: 26px;
+  cursor: pointer;
+  border: none;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  background-color: #f0f0f0; /* Default background color */
+  transition: background-color 0.3s, transform 0.2s; /* Adding transitions */
+}
+
+.digit:hover {
+  background-color: #e0e0e0; /* Lighter background color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.operator {
+  width: 85px;
+  height: 90px;
+  font-size: 26px;
+  cursor: pointer;
+  border: none;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  background-color: #ffcc00; /* Example different background color */
+  transition: background-color 0.3s, transform 0.2s; /* Adding transitions */
+}
+
+.operator:hover {
+  background-color: #e6b800; /* Darker color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.fun-key {
+  width: 85px;
+  height: 90px;
+  font-size: 26px;
+  cursor: pointer;
+  border: none;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  background-color: #66cc66; /* Example different background color */
+  transition: background-color 0.3s, transform 0.2s; /* Adding transitions */
+}
+
+.fun-key:hover {
+  background-color: #52b552; /* Darker color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.scientific {
+  width: 85px;
+  height: 90px;
+  font-size: 26px;
+  cursor: pointer;
+  border: none;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  background-color: #99ccff; /* Example different background color */
+  transition: background-color 0.3s, transform 0.2s; /* Adding transitions */
+}
+
+.scientific:hover {
+  background-color: #80bfff; /* Darker color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
 }
